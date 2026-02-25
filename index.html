@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MomentsCinematic - Premium Photography Portfolio by Vivek B. Rathod. Cinematic photography, wedding photography, and professional videography services in India.">
+    <title>MomentsCinematic | Premium Photography Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Loading Animation -->
+    <div id="loader">
+        <div class="loader-content">
+            <span class="logo-text">Moments<span>Cinematic</span></span>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-main">Moments</span>
+                <span class="logo-sub">Cinematic</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-slideshow">
+            <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070&auto=format&fit=crop')">
+            </div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=2069&auto=format&fit=crop')">
+            </div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2070&auto=format&fit=crop')">
+            </div>
+        </div>
+
+        <div class="hero-content container">
+            <h1 class="reveal-text">Capturing Moments <br><span>Freezing Time</span></h1>
+            <p class="reveal-text delay-1">Professional Cinematic Photography & Videography</p>
+            <div class="hero-btns reveal-text delay-2">
+                <a href="#gallery" class="btn btn-primary">View Portfolio</a>
+                <a href="#contact" class="btn btn-outline">Book Now</a>
+            </div>
+
+            <div class="social-links hero-social">
+                <a href="https://www.instagram.com/momentscinematic" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container grid-2">
+            <div class="about-img reveal-left">
+                <div class="img-wrapper">
+                    <img src="act/main.jpg" alt="Vivek B. Rathod">
+                    <div class="img-border"></div>
+                </div>
+            </div>
+            <div class="about-text reveal-right">
+                <h2 class="section-title">Vivek B. Rathod</h2>
+                <h3 class="section-subtitle">Visual Storyteller & Filmmaker</h3>
+                <p>Based in Nagpur, India, MomentsCinematic is dedicated to capturing the raw emotions and cinematic beauty of your special moments. With over 5 years of experience in wedding and lifestyle photography, we bring a unique artistic vision to
+                    every project.</p>
+
+                <div class="skills-container">
+                    <div class="skill">
+                        <div class="skill-info">
+                            <span>Wedding Photography</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 0%" data-width="95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-info">
+                            <span>Cinematic Videography</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 0%" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-info">
+                            <span>Color Grading</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 0%" data-width="85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery">
+        <div class="container text-center">
+            <h2 class="section-title">Portfolio</h2>
+            <p class="section-desc">Explore our cinematic captures across different categories</p>
+
+            <div class="filter-btns">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="wedding">Weddings</button>
+                <button class="filter-btn" data-filter="pre-wedding">Pre-Wedding</button>
+                <button class="filter-btn" data-filter="portrait">Portraits</button>
+                <button class="filter-btn" data-filter="maternity">Maternity</button>
+                <button class="filter-btn" data-filter="kids">Kids</button>
+                <button class="filter-btn" data-filter="event">Events</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+                <button class="filter-btn" data-filter="cinematic">Cinematic</button>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Wedding Category - Flower Petals -->
+                <div class="gallery-item wedding reveal">
+                    <img src="act/2.png" alt="Wedding Ceremony Petals">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <span>Traditional Ceremony</span>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pre-Wedding - Save the Date -->
+                <div class="gallery-item pre-wedding reveal">
+                    <img src="act/15.png" alt="Save the Date Shoot">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <span>Save The Date</span>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Pre-Wedding - Romantic Field -->
+                <div class="gallery-item pre-wedding reveal">
+                    <img src="act/14.png" alt="Romantic Couple Shoot">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <span>Cinematic Pre-Wedding</span>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portrait - Bridal Close-up -->
+                <div class="gallery-item portrait reveal">
+                    <img src="act/16.png" alt="Bridal Portrait">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <span>Bridal Portraits</span>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item portrait reveal">
+                    <img src="act/17.png" alt="Bridal Portrait">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <span>Bridal Portraits</span>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item portrait reveal">
+                    <img src="act/18.png" alt="Bridal Portrait">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <span>Bridal Portraits</span>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item portrait reveal">
+                    <img src="act/20.png" alt="Bridal Portrait">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <span>Bridal Portraits</span>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wedding Category - Couple -->
+                <div class="gallery-item wedding reveal">
+                    <img src="act/11.png" alt="Royal Wedding Couple">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <span>Engagement Shoot</span>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kids Category (Krishna Theme) -->
+                <div class="gallery-item kids event reveal">
+                    <img src="act/9.png" alt="Krishna Kid Shoot">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <span>Krishna Theme Shoot</span>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wedding/Mehendi Category -->
+                <div class="gallery-item wedding event reveal">
+                    <img src="act/7.png" alt="Mehendi Ceremony">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <span>Mehendi Ceremony</span>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portrait/Maternity Category -->
+                <div class="gallery-item maternity portrait reveal">
+                    <img src="act/3.png" alt="Maternity Portrait">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <span>Maternity Shoot</span>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event/Haldi Category -->
+                <div class="gallery-item wedding event reveal">
+                    <img src="act/4.png" alt="Haldi Ceremony">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <span>Haldi Ceremony</span>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cinematic Reel -->
+                <div class="gallery-item cinematic reveal">
+                    <img src="act/1.png" alt="Cinematic Film">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <span>Cinematic Film</span>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kids Portraits -->
+                <div class="gallery-item kids reveal">
+                    <img src="act/9.png" alt="Kids Portrait">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <span>Kids Portraits</span>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item wedding reveal">
+                    <img src="act/1.png" alt="Wedding Ceremony Petals">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <span>Traditional Ceremony</span>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item wedding reveal">
+                    <img src="act/5.png" alt="Wedding Ceremony Petals">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <span>Traditional Ceremony</span>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item wedding reveal">
+                    <img src="act/6.png" alt="Wedding Ceremony Petals">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <span>Traditional Ceremony</span>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item wedding reveal">
+                    <img src="act/13.png" alt="Wedding Ceremony Petals">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <span>Traditional Ceremony</span>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item wedding reveal">
+                    <img src="act/12.png" alt="Wedding Ceremony Petals">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <span>Traditional Ceremony</span>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services dark-bg">
+        <div class="container">
+            <h2 class="section-title text-center">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <i class="fas fa-ring"></i>
+                    <h3>Wedding Photography</h3>
+                    <p>Capturing the essence of your love story with cinematic brilliance.</p>
+                </div>
+                <div class="service-card reveal">
+                    <i class="fas fa-video"></i>
+                    <h3>Cinematic Videography</h3>
+                    <p>High-end film production for your most memorable events.</p>
+                </div>
+                <div class="service-card reveal">
+                    <i class="fas fa-camera-retro"></i>
+                    <h3>Portrait Photography</h3>
+                    <p>Professional headshots and artistic portraits that stand out.</p>
+                </div>
+                <div class="service-card reveal">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Event Photography</h3>
+                    <p>From corporate events to private parties, we cover it all.</p>
+                </div>
+                <div class="service-card reveal">
+                    <i class="fas fa-palette"></i>
+                    <h3>Album Designing</h3>
+                    <p>Customized, premium album designs to preserve your memories.</p>
+                </div>
+                <div class="service-card reveal">
+                    <i class="fas fa-tv"></i>
+                    <h3>LED Wall & Live Telecast</h3>
+                    <p>Technological solutions for large scale events and weddings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container container-narrow">
+            <h2 class="section-title text-center">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info reveal">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Plot no.39 Om Sai Nagar Near Godhani Railway Station, Nagpur</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>momentsphotography09@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 98237 82525, 70218 95849</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-instagram"></i>
+                        <div>
+                            <h4>Instagram</h4>
+                            <p>@momentscinematic</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal">
+                    <div class="form-group">
+                        <input type="text" id="name" required>
+                        <label for="name">Full Name</label>
+                    </div>
+                    <!-- ... other fields ... -->
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+
+                    <div class="digital-card reveal" style="margin-top: 2rem; border: 1px dashed var(--primary-color); padding: 1rem; border-radius: 10px; background: rgba(212, 175, 55, 0.05);">
+                        <p style="font-size: 0.9rem; color: var(--primary-color); margin-bottom: 0.5rem;"><i class="fas fa-id-card"></i> Digital Business Card</p>
+                        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=2076&auto=format&fit=crop" alt="Digital Card" style="width: 100%; border-radius: 5px;">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="footer-logo">
+                <span class="logo-main">Moments</span>
+                <span class="logo-sub">Cinematic</span>
+            </div>
+            <p>Capturing the Cinematic Essence of Life.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/momentscinematic" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; 2024 MomentsCinematic. All Rights Reserved. Designed by <a href="#">Antigravity</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox for Gallery -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption"></div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
