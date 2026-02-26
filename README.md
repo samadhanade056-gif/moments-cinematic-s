@@ -1,4 +1,4 @@
-# MomentsCinematic – Photography Portfolio Website
+git commit -m "Initial commit"# MomentsCinematic – Photography Portfolio Website
 
 A modern, premium, cinematic photography portfolio website designed for professional photographers. MomentsCinematic showcases photography work with elegant galleries, smooth animations, and a fully responsive dark luxury theme.
 
