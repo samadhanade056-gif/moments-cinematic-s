@@ -1,20 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Loader Removal
     const loader = document.getElementById('loader');
-    window.addEventListener('load', () => {
-        setTimeout(() => {
-            loader.style.opacity = '0';
+    if (loader) {
+        window.addEventListener('load', () => {
             setTimeout(() => {
-                loader.style.display = 'none';
-            }, 500);
-            
-            // Start animations once loader is gone
-            document.querySelectorAll('.reveal-text').forEach(el => el.classList.add('active'));
-            document.getElementById('navbar').classList.add('visible');
-        }, 1500);
-    });
-
-    // 2. Navbar Scroll Effects
+                loader.classList.add('loaded');
+                
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                }, 1800); // Extended slightly to let the full zoom-through animation finish
+                
+                // Start text and navbar animations as the user passes through the lens
+                setTimeout(() => {
+                    document.querySelectorAll('.reveal-text').forEach(el => el.classList.add('active'));
+                    const nav = document.getElementById('navbar');
+                    if (nav) nav.classList.add('visible');
+                }, 1000);
+            }, 800); // Wait briefly upon load before opening
+        });
+    }
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
